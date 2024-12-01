@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading animation</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: dimgrey;
+        }
+
+        #heading {
+            text-align: center;
+            margin: 20px;
+            color: darkorange;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: grey;
+            padding: 20px;
+        }
+
+        #navbar div {
+            display: flex;
+            gap: 30px;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: greenyellow;
+            font: bold;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #innerNavbar a {
+            color: aqua;
+        }
+
+        #mainBox {
+            display: flex;
+            justify-content: center;
+        }
+
+        #box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: blueviolet;
+            height: 300px;
+            width: 600px;
+            border-radius: 10px;
+        }
+
+        .type1 {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 9px solid black;
+            border-top: 9px solid yellow;
+            animation-name: spinIt;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        .type2 {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 9px solid black;
+            border-top: 9px solid yellow;
+            animation-name: spinIt;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+        @keyframes spinIt {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <a href="#">loaders.ai</a>
+            <div id="innerNavbar">
+                <a href="#">All Tools</a>
+                <a href="#">Filter</a>
+                <a href="#">Make Yourself</a>
+            </div>
+            <a href="#">Account</a>
+        </div>
+    </header>
+    <h2 id="heading">Pick up your Favorite smooth loaders</h2>
+    <div id="mainBox">
+        <div id="box">
+            <div class="type1"></div>
+            <div class="type1"></div>
+            <div class="type2"></div>
+            <div class="type2"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

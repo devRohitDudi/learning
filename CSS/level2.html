@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        #navbar {
+            height: 40px;
+            background-color: #0f1111;
+            display: flex;
+            flex-direction: row;
+            padding: 20px 10px 20px 10px;
+            justify-content: space-between;
+        }
+
+        #navbar button {
+            background-color: #f08804;
+        }
+
+        #logo {
+            height: 35px;
+            padding-top: 6px;
+        }
+
+        #navigation {
+            display: flex;
+            height: fit-content;
+            gap: 20px;
+            padding-top: 6px;
+        }
+
+        #navigation a {
+            text-decoration: none;
+            font-size: 17px;
+            color: antiquewhite;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #search {
+            padding-top: 5px;
+            padding-right: 20px;
+        }
+
+        #content {
+            height: 650px;
+        }
+
+        #content div {
+            display: inline-block;
+            justify-content: space-between;
+            height: 150px;
+            width: 200px;
+            margin: 10px;
+            border: 10px;
+            color: #f08804;
+            border-radius: 20px;
+            background-color: rgba(000, 000, 255, 0.3);
+        }
+
+        #footer {
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="navbar">
+
+        <a href="temp.com"> <img id="logo" src="amazon.png" alt="amazon ong"></a>
+        <div id="navigation">
+            <a href="temp.com">Products</a>
+            <a href="temp.com">My Cart</a>
+            <a href="temp.com">Contact Us</a>
+        </div>
+        <div id="search">
+            <input placeholder="search here">
+            <button>Search</button>
+        </div>
+    </header>
+    <div id="content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div>© Copyright Amazon.com 1999-2024</div>
+            <div>Contact Us </div>
+        </div>
+    </footer>
+</body>
+
+</html>

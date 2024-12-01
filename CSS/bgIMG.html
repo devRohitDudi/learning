@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> images</title>
+    <style>
+        * {
+            background-color: dimgray;
+        }
+
+        #boxes {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+        }
+
+        #boxes div {
+            height: 220px;
+            width: 200px;
+            background-color: black;
+            border: 2px solid rgb(38, 255, 45);
+            border-radius: 5%;
+            margin: 5px;
+            color: aqua;
+        }
+
+        #box1 {
+            background-image: url("https://images.pexels.com/photos/160776/maternity-baby-belly-pregnant-pregnancy-160776.jpeg");
+            background-size: cover;
+        }
+
+        #box2 {
+            background-image: url("https://images.pexels.com/photos/41162/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg");
+            background-size: cover;
+        }
+
+        #box3 {
+            background-image: url("https://images.pexels.com/photos/816608/pexels-photo-816608.jpeg");
+            background-size: cover;
+        }
+
+        #box4 {
+            background-image: url("https://images.pexels.com/photos/189857/pexels-photo-189857.jpeg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Explore Your Favorite pictures</h1>
+
+    <div id="boxes">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+    </div>
+
+</body>
+
+</html>

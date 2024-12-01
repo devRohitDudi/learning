@@ -1,0 +1,51 @@
+#container {
+    display: flex;
+    height: 500px;
+    width: 600px;
+    background-color: darkgrey;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: space-around;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: flex-end;
+    align-content: center; */
+    justify-content: center;
+    /*for main axis*/
+    align-content: flex-end;
+    /*for cross axis*/
+}
+
+div {
+    height: 150px;
+    width: 50px;
+    border: 1px solid black;
+    margin: 2px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: blue;
+    height: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#box3 {
+    background-color: blueviolet;
+}
+
+#box4 {
+    background-color: burlywood;
+    height: 75px;
+}
+
+#box5 {
+    background-color: coral;
+    align-self: flex-end;
+}

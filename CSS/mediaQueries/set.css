@@ -1,0 +1,56 @@
+#mainBox div {
+    margin: 10px;
+    color: aliceblue;
+}
+
+#box1 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#box2 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#box3 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#box4 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+@media (max-width:400px) {
+    #box1 {
+        background-color: green;
+    }
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    #box2 {
+        background-color: pink;
+    }
+}
+
+@media (min-width:400px) and (max-width:600px) {
+    #box3 {
+        background-color: red;
+    }
+}
+
+@media (min-width:600px) {
+    #box4 {
+        background-color: blue;
+    }
+}

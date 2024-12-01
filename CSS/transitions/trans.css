@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: aliceblue;
+}
+
+body div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+#box {
+    height: 200px;
+    width: 400px;
+    margin: 50px;
+    background-color: rgb(56, 103, 117);
+    border: 2px solid aqua;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#logins a {
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+    color: cyan;
+    background-color: rgb(107, 81, 18);
+
+}
+
+#continue {
+    text-decoration: none;
+    background-color: rgb(73, 105, 0);
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+
+}
+
+#login {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#signup {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+}
+
+#login:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid pink;
+}
+
+#signup:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid pink;
+}
+
+#login:active {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid pink;
+}
+
+#signup:active {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid pink;
+}
+
+
+#continue:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid pink;
+}
+
+#continue:active {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid pink;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    position: static;
+    bottom: 0px;
+}

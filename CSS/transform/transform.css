@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: darkgrey;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(87, 65, 14);
+    padding: 10px;
+}
+
+#navbar div {
+    display: flex;
+    font-size: 20px;
+    align-content: space-between;
+}
+
+#navbar a {
+    text-decoration: none;
+    background-color: rgb(87, 65, 14);
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(43, 226, 80);
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+#midButtons a {
+    color: rgb(255, 247, 0);
+    padding: 5px 10px 5px 10px;
+}
+
+#midButtons a:hover {
+    border-radius: 10%;
+    background-color: rgb(90, 15, 125);
+    color: rgb(55, 255, 0);
+}
+
+#mainBox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    width: auto;
+    background-color: darkslategray;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+#mainBox div {
+    display: flex;
+    border-radius: 10px;
+    height: 200px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    margin: 20px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+#mainBox2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    width: auto;
+    background-color: darkslategray;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+#mainBox2 div {
+    display: flex;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(69, 184, 11);
+    margin: 20px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#mainBox div:hover {
+    rotate: z 90deg;
+    transform: scale(1.3);
+    /* rotate: x 45deg; */
+    background-color: darkviolet;
+}
+
+#mainBox2 div:hover {
+    transform: translateY(-10px);
+    /* rotate: x 45deg; */
+    transform: skew(30deg);
+    background-color: darkviolet;
+}
+
+
+
+
+#footer {
+    display: flex;
+    align-content: center;
+    text-align: center;
+}

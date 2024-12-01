@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        #mainbox {
+            display: flex;
+            height: 300px;
+            width: 300px;
+            background-color: blueviolet;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+            justify-content: center;
+            overflow: auto;
+
+        }
+
+        #mainbox div {
+            border: 2px solid black;
+            flex-direction: row;
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border-radius: 0.5em;
+            margin: 20px;
+        }
+
+        #box1 {
+            position: fixed;
+            top: 1px;
+        }
+
+        #box2 {
+            position: relative;
+            left: -70px;
+            z-index: 1;
+        }
+
+        #box3 {
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border-radius: 0.5em;
+            margin: 20px;
+            position: sticky;
+            top: 0px;
+        }
+
+        #box4 {
+            position: absolute;
+            top: 40px;
+            right: 10px;
+        }
+
+        #text {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainbox">
+        <div id="box1">box 1</div>
+        <div id="box2">box 2</div>
+        <div id="box4">box 4</div>
+    </div>
+    <div id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veritatis culpa nostrum cumque quia consectetur
+        rerum, quam aspernatur laudantium optio, vitae natus. In aliquid facilis quidem nihil repellat qui magnam.
+        Illum provident ab debitis odit alias ad error, blanditiis ipsa, hic beatae veniam fuga. Temporibus ad eaque
+        voluptates dolorem deleniti quos ducimus provident vitae illo! Asperiores quo ipsa expedita ab?
+        <div id="box3">box 3</div>
+
+        Perspiciatis natus sit ratione facilis, sint, impedit molestiae iusto recusandae illo nobis odio tenetur
+        reprehenderit voluptas totam consequuntur explicabo et cupiditate, obcaecati quisquam inventore? Necessitatibus
+        voluptatum excepturi ex inventore porro?
+        Magni, aperiam. Laborum unde velit aliquid dolorum recusandae culpa aliquam vitae iusto consequuntur assumenda
+        repudiandae perferendis quibusdam nisi praesentium laboriosam atque quidem ab, odio accusamus nostrum neque,
+        quia incidunt officia.
+        Modi, dolorum quisquam. A, corporis vero rem ratione quae veritatis incidunt quisquam perferendis laborum.
+        Aliquam earum voluptates vitae vero. Enim corporis recusandae esse minus non porro impedit necessitatibus
+        tempora hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos cupiditate dolores laborum natus quasi,
+        architecto odit necessitatibus excepturi, error doloremque inventore, impedit deserunt pariatur facilis magni
+        vitae quo deleniti molestiae!
+        Nostrum hic culpa, quisquam alias blanditiis magnam nobis recusandae eos laborum quae voluptatem amet facilis
+        architecto obcaecati impedit debitis! Assumenda, dolorum. Minus consequatur corporis doloribus quos nemo alias
+        dignissimos earum.
+        Ex eos ullam maiores, pariatur aperiam cumque eveniet vero mollitia quo? Tempora debitis, saepe reiciendis
+        officiis nam minus adipisci sed, at id est aperiam dicta soluta, veritatis corporis ratione optio!
+        Repellendus sit hic itaque reprehenderit similique quos ullam, ipsum reiciendis accusamus, excepturi delectus
+        ad, nam a deleniti odit? Magnam repudiandae repellat perferendis error non eos incidunt quas pariatur aspernatur
+        odio!
+        Id praesentium illum esse ex dolorum dolorem assumenda, ab dignissimos voluptatum asperiores veniam at dicta
+        quis nisi fugiat ut quae quibusdam laborum ducimus consequatur cupiditate. Enim magnam temporibus a nemo?
+    </div>
+</body>
+
+</html>
