@@ -1,0 +1,185 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(12, 12, 53);
+}
+
+.header {
+    padding: 15px 20px;
+    border-bottom: 0.1rem solid rgb(134, 134, 134);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-navbar a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.inner-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.corner-button {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(132, 0, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* codepne tile */
+
+.center-main {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.main-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: auto;
+    height: auto;
+    background-color: rgb(20, 20, 20);
+    border-radius: 20px;
+    border: 0.1px solid rgb(58, 58, 58);
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+}
+
+.photo {
+    width: 370px;
+    height: 230px;
+    border-radius: 0.8rem;
+    background-image: url(https://images.pexels.com/photos/27798074/pexels-photo-27798074/free-photo-of-faroe-islands-6.jpeg);
+    background-size: cover;
+}
+
+.user-prev {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+
+.user-photo {
+    height: 6.8vh;
+    width: 9vw;
+    border-radius: 50%;
+    background-image: url(https://avatars.githubusercontent.com/u/179193590?v=4);
+    background-size: cover;
+    position: relative;
+    left: -25px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    left: -10px;
+}
+
+.project-title {
+    text-decoration: none;
+    color: rgb(242, 242, 242);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.username {
+    text-decoration: none;
+    color: rgb(139, 138, 138);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.interaction {
+    display: none;
+}
+
+.like-button {
+    background-color: rgb(37, 35, 35);
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 3.5rem;
+    color: rgb(187, 187, 187);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.comment-button {
+    background-color: rgb(37, 35, 35);
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 3.5rem;
+    color: rgb(187, 187, 187);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.share-button {
+    background-color: rgb(37, 35, 35);
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 3.5rem;
+    color: rgb(187, 187, 187);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.main-tile:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.05);
+
+    .interaction {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        padding-top: 15px;
+        position: relative;
+        left: -70px;
+    }
+}
+
+.like-button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.comment-button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+
+}
+
+.share-button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
