@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading animations</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(13, 20, 62);
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: chartreuse;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+
+        .inner-navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .inner-navbar a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: rgb(35, 209, 201);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+
+        .horizontal-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blueviolet;
+            margin: 20px;
+        }
+
+        .loader {
+            display: flex;
+            height: auto;
+            width: auto;
+            gap: 15px;
+            margin-top: 50px;
+        }
+
+        .dot {
+            height: 20px;
+            width: 20px;
+            animation-name: smooth-zoom;
+            animation-duration: 600ms;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0ms;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        #first-dot {
+            background-color: red;
+
+        }
+
+        #second-dot {
+            background-color: yellow;
+        }
+
+        #third-dot {
+            background-color: blue;
+        }
+
+        @keyframes smooth-zoom {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#">LoadFrames</a>
+            <div class="inner-navbar">
+                <a href="#">contact</a>
+                <a href="#">Contribute</a>
+                <a href="#">connections</a>
+            </div>
+            <a href="#">Profile</a>
+        </div>
+    </header>
+    <div class="horizontal-div">
+        <h2 class="title"> Explore Smooth Animations 2</h2>
+    </div>
+    <div class="horizontal-div">
+        <div class="loader">
+            <div class="dot" id="first-dot"></div>
+            <div class="dot" id="second-dot"></div>
+            <div class="dot" id="third-dot"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+// assignment completed!!!

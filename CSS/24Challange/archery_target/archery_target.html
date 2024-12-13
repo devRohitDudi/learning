@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archery Target</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: rgb(23, 38, 38);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            padding: 15px 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(167, 73, 255);
+            font-size: 1.3rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+
+        .inner-navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .inner-navbar a {
+            text-decoration: none;
+            color: rgb(22, 187, 168);
+            font-size: 1.2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+
+        .horizontal-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: burlywood;
+            margin-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .archery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .circle {
+            height: auto;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        .layer1 {
+            height: 70px;
+            width: 70px;
+            background-color: yellow;
+        }
+
+        .layer2 {
+            padding: 40px;
+            background-color: red;
+        }
+
+        .layer3 {
+            padding: 40px;
+            background-color: blue;
+        }
+
+        .layer4 {
+            padding: 40px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#">Target</a>
+            <div class="inner-navbar">
+                <a href="#">Connections</a>
+                <a href="#">Create Amazing</a>
+                <a href="#">Contact</a>
+            </div>
+            <a href="#">Start Learning</a>
+        </div>
+    </header>
+    <div class="horizontal-div">
+        <h2>
+            Your target
+        </h2>
+    </div>
+    <!-- archery -->
+    <div class="archery">
+        <div class="circle layer4">
+            <div class="circle layer3">
+                <div class="circle layer2">
+                    <div class="circle layer1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- assignment done!!! -->
