@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan flag</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: rgb(47, 47, 47);
+            display: inline;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid rgb(136, 136, 136);
+            box-shadow: 1px 1px 7px rgb(87, 87, 87);
+            padding: 15px 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(255, 255, 0);
+            font-size: larger;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            font-size: 1.3rem;
+            margin-top: 20px;
+            font-weight: 600;
+            font-family: monospace
+        }
+
+        .flag {
+            display: flex;
+            height: 300px;
+            width: calc(300px *8/5);
+            background-color: #0269A6;
+            box-shadow: 1px 1px 5px black;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .stripe {
+            width: 100%;
+            height: calc(300px *1/5);
+            background-color: #FECC00;
+        }
+
+        .base {
+            align-self: center;
+            width: 100%;
+        }
+
+        .pole {
+            width: 300px;
+            position: absolute;
+            rotate: 90deg;
+            align-self: center;
+            /* top: calc(300px *4/10); (align-self: center) */
+            right: calc(calc(300px *8/5) *5/16);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#">Hello Developer</a>
+        </div>
+    </header>
+    <div class="heading">
+        Explore all Country & Region Flags
+    </div>
+
+    <div class="flag">
+        <div class="stripe pole"></div>
+        <div class="stripe base"></div>
+    </div>
+</body>
+
+</html>
