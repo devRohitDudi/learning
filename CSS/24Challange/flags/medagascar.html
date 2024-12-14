@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>germeny flag</title>
+    <title>Medagascar flag</title>
     <style>
         * {
             padding: 0px;
@@ -45,29 +45,35 @@
         }
 
         .flag {
-            display: grid;
-            height: 200px;
-            width: calc(200px *5/3);
-            background-color: black;
-            box-shadow: 1px 2px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: calc(300px * 2/3);
+            box-shadow: 1px 1px 5px black;
             margin: 50px auto;
         }
 
-        .stripe {
-            height: calc(200px /3);
-            width: calc(200px *5/3);
+        .column1 {
+            width: calc(300px/3);
+            height: calc(300px * 2/3);
+            background-color: white;
         }
 
-        .black {
-            background-color: #000000;
+        .column2 {
+            display: grid;
+            width: calc((300px/3)*2);
+            height: calc(300px * 2/3);
         }
 
-        .red {
-            background-color: #ff0000;
+        .row1 {
+            height: calc(150px * 2/3);
+            background-color: #FC3E32;
         }
 
-        .yellow {
-            background-color: #ffd900;
+        .row2 {
+            height: calc(150px * 2/3);
+            background-color: #007E39;
         }
     </style>
 </head>
@@ -83,9 +89,11 @@
     </div>
 
     <div class="flag">
-        <div class="black stripe"></div>
-        <div class="red stripe"></div>
-        <div class="yellow stripe"></div>
+        <div class="column1"></div>
+        <div class="column2">
+            <div class="row1"></div>
+            <div class="row2"></div>
+        </div>
     </div>
 </body>
 
