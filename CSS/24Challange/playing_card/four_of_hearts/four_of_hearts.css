@@ -1,0 +1,92 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(168, 168, 168);
+}
+
+:root {
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) *2/3);
+    --small-heart: 30px;
+    --big-heart: 50px;
+    --big-heart-gap: 25px;
+    --big-heart-margin-vertical: 30px;
+    --small-heart-margin-horizontal: 72px;
+    --small-heart-margin-vertical: 4px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card {
+    height: var(--card-height);
+    width: var(--card-width);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(76, 76, 76);
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: var(--small-heart-margin-horizontal);
+    bottom: var(--small-heart-margin-vertical);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: var(--small-heart-margin-horizontal);
+    top: var(--small-heart-margin-vertical);
+    transform: rotate(180deg);
+}
+
+.top-hearts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--big-heart-gap);
+    position: relative;
+    bottom: var(--big-heart-margin-vertical);
+}
+
+.bottom-hearts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--big-heart-gap);
+    position: relative;
+    top: var(--big-heart-margin-vertical);
+    transform: rotate(180deg);
+}
+
+.small-img {
+    height: var(--small-heart);
+    width: var(--small-heart);
+    background-image: url(Naipe_copas.png);
+    background-size: cover;
+}
+
+.big-img {
+    height: var(--big-heart);
+    width: var(--big-heart);
+    background-image: url(Naipe_copas.png);
+    background-size: cover;
+}

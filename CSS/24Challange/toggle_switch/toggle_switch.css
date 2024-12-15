@@ -4,7 +4,7 @@
 }
 
 :root {
-    --toggle-width: 100px;
+    --toggle-width: 90px;
     --toggle-height: calc(var(--toggle-width) *40/100);
     --circle-size: calc(var(--toggle-width) *40/100);
     --toggle-radius: calc(var(--toggle-width) *40/100);
