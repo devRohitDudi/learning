@@ -1,0 +1,88 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #010409;
+}
+
+:root {
+    --container-width: 380px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: var(--container-width);
+    padding: 20px 0px;
+    background-color: #0d1117;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.photo {
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+    background-image: url(https://avatars.githubusercontent.com/u/179193590?v=4);
+    background-size: cover;
+}
+
+.profile-details {
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: calc(var(--container-width) *40/380);
+    margin-right: calc(var(--container-width) *40/380);
+}
+
+.name {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.username {
+    margin-top: 5px;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+}
+
+.about {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 249, 249);
+}
+
+.edit-button {
+    margin-top: 20px;
+    background-color: rgb(30, 36, 43);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: sans-serif;
+    width: 340px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(61, 61, 61);
+}
+
+.edit-button:hover {
+    background-color: rgb(33, 40, 48);
+}
