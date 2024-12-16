@@ -1,0 +1,62 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+:root {
+    --geopardy-blue: #060CE9;
+    --card-height: 200px;
+    --card-width: calc(var(--card-height) * 5/3);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+    height: var(--card-height);
+    width: var(--card-width);
+    border-radius: 10px;
+    background-color: var(--geopardy-blue);
+    transition-duration: 600ms;
+    transition-property: all;
+    transform-style: preserve-3d;
+}
+
+.card-back {
+    display: none;
+    color: white;
+}
+
+.card-front {
+    display: block;
+    color: white;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+
+    .card-back {
+        display: block;
+        transform: rotateY(180deg);
+    }
+
+    .card-front {
+        display: none;
+    }
+}
+
+/* assignment done!!! */
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+}
