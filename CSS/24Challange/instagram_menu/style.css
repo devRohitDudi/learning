@@ -1,0 +1,90 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --grade1: #feda75;
+    --grade2: #fa7e1e;
+    --grade3: #d62976;
+    --grade4: #962fbf;
+    --grade5: #4f5bd5;
+    --viewed: gray;
+    --bg-main: #000;
+    --bg-live: red;
+}
+
+body {
+    background-color: black;
+}
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.stories {
+    /* margin-top: 20px; */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center;  this will make center "live" as well  */
+    max-width: 320px;
+    margin: 2em auto;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    position: relative;
+    gap: 15px;
+}
+
+.img-wrapper {
+    height: 70px;
+    width: 70px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.img {
+    height: 92%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.new>.img-wrapper {
+    background: linear-gradient(to top right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.viewed>.img-wrapper {
+    background-color: var(--viewed);
+}
+
+.live:after {
+    content: "LIVE";
+    background-color: var(--bg-live);
+    color: white;
+    font-size: .7em;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 2px 4px;
+    position: absolute;
+    top: 50%;
+    align-self: center;
+}
+
+.name {
+    color: white;
+}

@@ -1,0 +1,40 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    border-bottom: 1px solid rgb(65, 65, 65);
+}
+
+:root {
+    --circle-size: 70px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    height: var(--circle-size);
+    width: var(--circle-size);
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 12px solid grey;
+    border-top: 12px solid purple;
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition: all;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
