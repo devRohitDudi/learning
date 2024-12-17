@@ -1,0 +1,81 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(56, 56, 97);
+}
+
+:root {
+    --progress-width: 300px;
+    --progress-height: calc(var(--progress-width) * 30/300);
+    --stage1: 30px;
+    /* --stage2: 60px;
+    --stage3: 90px;
+    --stage4: 120px;
+    --stage5: 150px;
+    --stage6: 180px;
+    --stage7: 210px;
+    --stage8: 240px;
+    --stage9: 270px; */
+    --stage10: 300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(129, 129, 129);
+    color: greenyellow;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-box {
+    margin-top: 40px;
+    height: var(--progress-height);
+    width: var(--progress-width);
+    background-color: grey;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.progress {
+    height: var(--progress-height);
+    animation-name: live-progress;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.progress-radius {
+    border-radius: 20px;
+}
+
+@keyframes live-progress {
+    0% {
+        width: 0px;
+        border-radius: 20px;
+        background-color: rgb(255, 0, 0);
+    }
+
+    77% {
+        width: var(--stage10);
+        background-color: rgb(34, 255, 0);
+    }
+
+    100% {
+        width: var(--stage10);
+        border-radius: 20px;
+        background-color: rgb(34, 255, 0);
+    }
+}
+
+/* assignment done!!! */
